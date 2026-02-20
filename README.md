@@ -1,24 +1,36 @@
-# Personal Website Skeleton (GitHub Pages)
+# Zhuofei Lu — Personal Website (GitHub Pages)
 
-这是一个可直接部署到 GitHub Pages 的个人网站雏形。
+This repository contains a minimal black-and-white personal homepage for GitHub Pages.
 
-## 本地预览
+## Run locally
 
 ```bash
 python3 -m http.server 8000
 ```
 
-然后访问 <http://localhost:8000>
+Then open: <http://localhost:8000>
 
-## 部署到 GitHub Pages
+## Deploy to GitHub Pages
 
-1. 将代码推送到 GitHub 仓库（例如 `username.github.io`）。
-2. 在仓库 `Settings -> Pages` 中启用 Pages。
-3. 选择 `Deploy from a branch`，分支选 `main`，目录选 `/ (root)`。
-4. 保存后等待几分钟即可访问。
+1. Push this repo to GitHub.
+2. Open **Settings → Pages**.
+3. Under **Build and deployment**, choose:
+   - **Source**: Deploy from a branch
+   - **Branch**: `main`
+   - **Folder**: `/ (root)`
+4. Save and wait a few minutes.
 
-## 后续替换建议
+## If you hit merge conflicts after pull
 
-- 将首页头像占位块替换为你的真实照片。
-- 修改 `index.html` 中的经历、项目、联系方式。
-- 如果需要中英双语，可以新增一个 `en/` 页面或加语言切换按钮。
+If `index.html` shows markers like `<<<<<<<`, `=======`, `>>>>>>>`, keep the **English minimal** version and remove all conflict markers.
+
+Quick fix:
+
+```bash
+# keep the current branch version of index.html
+ git checkout --ours index.html
+ git add index.html
+ git commit -m "fix: resolve merge conflict in index.html"
+```
+
+If you want the incoming branch version instead, use `--theirs`.
