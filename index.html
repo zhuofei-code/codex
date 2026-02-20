@@ -1,111 +1,137 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zhuofei Lu | Personal Website</title>
+    <title>Zhuofei Lu</title>
     <meta
       name="description"
-      content="Zhuofei Lu 的个人主页（GitHub Pages 版本雏形）"
+      content="Personal homepage of Zhuofei Lu, postdoctoral researcher in Sociology at Oxford."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="#top">Zhuofei Lu</a>
-        <button class="menu-toggle" aria-label="切换菜单" aria-expanded="false">☰</button>
-        <nav class="nav-links" aria-label="主导航">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+    <main class="container">
+      <header>
+        <h1>Zhuofei Lu</h1>
+      </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div>
-            <p class="eyebrow">Hello, I'm</p>
-            <h1>Zhuofei Lu</h1>
-            <p class="lead">
-              这是你个人网站的 GitHub Pages 版本雏形。当前使用占位内容，后续你可以替换图片、经历和作品。
-            </p>
-            <div class="hero-actions">
-              <a class="btn primary" href="#projects">查看作品</a>
-              <a class="btn" href="#contact">联系我</a>
-            </div>
-          </div>
-          <div class="avatar-card" aria-hidden="true">
-            <div class="avatar-placeholder">Photo Placeholder</div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section container">
-        <h2>About Me</h2>
+      <section>
         <p>
-          你可以在这里放个人介绍，例如研究方向、工作背景、教育经历或兴趣。
-          当前内容只是结构示例，方便你后续直接替换。
+          I am a postdoctoral researcher in Sociology and course covenor in Global Area Study at Oxford, working for the
+          ‘GenTime’ project. I have consistently engaged in research projects related to gig economy, flexible working,
+          occupational well-being, time use, and social inequality in the labour market. I serve the editoral board of
+          Work Employment &amp; Society &amp; Social Science Research.
         </p>
+
+        <p>
+          I employ computational and other quantitative methods (e.g., sequence analysis, causal inference and machine
+          learning) for analysing large-scale longitudinal household panel data, time diary data and biomarker data.
+        </p>
+
+        <p>I am from China, Guangdong, Shenzhen/Chaozhou.</p>
       </section>
 
-      <section id="work" class="section section-muted">
-        <div class="container">
-          <h2>Experience</h2>
-          <div class="timeline">
-            <article>
-              <h3>Current Position / Role</h3>
-              <p class="meta">2023 - Present</p>
-              <p>简要说明你当前工作内容或重点项目。</p>
-            </article>
-            <article>
-              <h3>Previous Experience</h3>
-              <p class="meta">2020 - 2023</p>
-              <p>简要说明上一段经历以及取得的成果。</p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <nav class="buttons" aria-label="Primary links">
+        <a
+          class="button"
+          href="https://scholar.google.com/citations?user=IEITTwcAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Publication</a
+        >
+        <a class="button" href="#" aria-disabled="true">CV (coming soon)</a>
+        <a class="button" href="#" aria-disabled="true">Teaching (coming soon)</a>
+      </nav>
 
-      <section id="projects" class="section container">
-        <h2>Selected Projects</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Project One</h3>
-            <p>项目描述占位：问题、方法、成果。</p>
-            <a href="#" aria-label="查看项目一">Read more →</a>
-          </article>
-          <article class="card">
-            <h3>Project Two</h3>
-            <p>项目描述占位：问题、方法、成果。</p>
-            <a href="#" aria-label="查看项目二">Read more →</a>
-          </article>
-          <article class="card">
-            <h3>Project Three</h3>
-            <p>项目描述占位：问题、方法、成果。</p>
-            <a href="#" aria-label="查看项目三">Read more →</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section section-muted">
-        <div class="container contact-box">
-          <h2>Contact</h2>
-          <p>邮箱：your.email@example.com（待替换）</p>
-          <p>LinkedIn / GitHub / Google Scholar 等链接可以放在这里。</p>
-        </div>
-      </section>
+      <footer>
+        <p>Contact me: <a href="mailto:zhuofei.lu@sociology.ox.ac.uk">zhuofei.lu@sociology.ox.ac.uk</a></p>
+        <p>© <span id="year"></span> Zhuofei Lu</p>
+      </footer>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="year"></span> Zhuofei Lu. Built with GitHub Pages.</p>
-      </div>
-    </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
+script.js
+script.js
+新
++5
+-0
+
+const year = document.getElementById('year');
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+styles.css
+styles.css
+新
++65
+-0
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --border: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(760px, 92vw);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.45rem 0.8rem;
+}
+
+.button[aria-disabled='true'] {
+  cursor: default;
+  opacity: 0.7;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+a {
+  color: var(--text);
+}
