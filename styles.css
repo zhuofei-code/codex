@@ -1,0 +1,80 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --border: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(760px, 92vw);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  background: #fff;
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+  box-shadow: 0 1px 0 #000;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 #000;
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 0 #000;
+}
+
+.button[aria-disabled='true'] {
+  cursor: default;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+footer {
+  padding-top: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--text);
+}
