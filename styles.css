@@ -161,7 +161,7 @@ p {
     /* tail */
     calc(var(--px) * 0) calc(var(--px) * 8) #000,
     calc(var(--px) * 0) calc(var(--px) * 9) #000,
-    calc(var(--px) * 0) calc(var(--px) * 10) #000
+    calc(var(--px) * 0) calc(var(--px) * 10) #000;
   filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.15));
   image-rendering: pixelated;
 }
