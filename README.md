@@ -20,6 +20,24 @@ Then open: <http://localhost:8000>
    - **Folder**: `/ (root)`
 4. Save and wait a few minutes.
 
+## Troubleshooting: Pages not publishing
+
+If the site cannot be published, check these common causes:
+
+1. `index.html` must exist in the selected Pages folder (this repo keeps it in root).
+2. Your latest commit must be on the branch selected in **Settings → Pages**.
+3. If you are working on another branch (for example `work`), merge it into `main` before publishing.
+4. In **Settings → Pages**, confirm **Branch = main** and **Folder = /(root)**.
+5. Wait 2–5 minutes, then refresh the Pages status and open the generated URL.
+
+Useful commands:
+
+```bash
+git checkout main
+git merge work
+git push origin main
+```
+
 ## If you hit merge conflicts after pull
 
 If `index.html` shows markers like `<<<<<<<`, `=======`, `>>>>>>>`, keep the **English minimal** version and remove all conflict markers.
