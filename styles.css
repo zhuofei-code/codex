@@ -24,6 +24,10 @@ body {
   padding: 3rem 0;
 }
 
+header {
+  position: relative;
+}
+
 h1 {
   margin: 0 0 1.5rem;
   font-size: 2rem;
@@ -35,41 +39,156 @@ p {
   margin: 0 0 1rem;
 }
 
-.buttons {
+.top-links {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 2rem 0;
+  align-items: center;
+  gap: 0;
+  font-size: 0.92rem;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(3px);
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
 }
 
-.button {
-  display: inline-block;
-  border: 1px solid var(--border);
+.top-link {
   color: var(--text);
   text-decoration: none;
-  padding: 0.56rem 1rem;
-  border-radius: 999px;
-  background: #fff;
-  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease, color 120ms ease;
-  box-shadow: 2px 2px 0 #000;
+  padding: 0.2rem 0.55rem;
+  transition: opacity 120ms ease;
 }
 
-.button:hover {
-  background: #000;
-  color: #fff;
-  transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0 #000;
+.top-link:hover {
+  text-decoration: underline;
 }
 
-.button:active {
-  transform: translate(0, 0);
-  box-shadow: 1px 1px 0 #000;
+.top-link + .top-link {
+  border-left: 1px solid rgba(0, 0, 0, 0.24);
 }
 
-.button[aria-disabled='true'] {
+.top-link[aria-disabled='true'] {
   cursor: default;
   opacity: 0.6;
   pointer-events: none;
+}
+
+.dog-playground {
+  position: relative;
+  height: 13rem;
+  margin: 3.25rem 0 3.75rem;
+  overflow: hidden;
+}
+
+.dog-playground::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.1rem;
+  border-top: 1px dashed rgba(0, 0, 0, 0.35);
+}
+
+.pixel-dog {
+  --px: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 1.35rem;
+  width: var(--px);
+  height: var(--px);
+  transform-origin: center;
+  color: #f5f5f5;
+  box-shadow:
+    /* head */
+    calc(var(--px) * 1) calc(var(--px) * 0) currentColor,
+    calc(var(--px) * 2) calc(var(--px) * 0) currentColor,
+    calc(var(--px) * 3) calc(var(--px) * 0) currentColor,
+    calc(var(--px) * 4) calc(var(--px) * 0) #d9d9d9,
+    calc(var(--px) * 0) calc(var(--px) * 1) currentColor,
+    calc(var(--px) * 1) calc(var(--px) * 1) currentColor,
+    calc(var(--px) * 2) calc(var(--px) * 1) currentColor,
+    calc(var(--px) * 3) calc(var(--px) * 1) currentColor,
+    calc(var(--px) * 4) calc(var(--px) * 1) currentColor,
+    calc(var(--px) * 5) calc(var(--px) * 1) #d9d9d9,
+    calc(var(--px) * 0) calc(var(--px) * 2) currentColor,
+    calc(var(--px) * 1) calc(var(--px) * 2) currentColor,
+    calc(var(--px) * 2) calc(var(--px) * 2) #111,
+    calc(var(--px) * 3) calc(var(--px) * 2) currentColor,
+    calc(var(--px) * 4) calc(var(--px) * 2) currentColor,
+    calc(var(--px) * 5) calc(var(--px) * 2) #111,
+    calc(var(--px) * 0) calc(var(--px) * 3) #ececec,
+    calc(var(--px) * 1) calc(var(--px) * 3) currentColor,
+    calc(var(--px) * 2) calc(var(--px) * 3) currentColor,
+    calc(var(--px) * 3) calc(var(--px) * 3) currentColor,
+    calc(var(--px) * 4) calc(var(--px) * 3) currentColor,
+    calc(var(--px) * 5) calc(var(--px) * 3) currentColor,
+    calc(var(--px) * 6) calc(var(--px) * 3) #d0d0d0,
+    /* body */
+    calc(var(--px) * 2) calc(var(--px) * 4) currentColor,
+    calc(var(--px) * 3) calc(var(--px) * 4) currentColor,
+    calc(var(--px) * 4) calc(var(--px) * 4) currentColor,
+    calc(var(--px) * 5) calc(var(--px) * 4) currentColor,
+    calc(var(--px) * 6) calc(var(--px) * 4) currentColor,
+    calc(var(--px) * 7) calc(var(--px) * 4) currentColor,
+    calc(var(--px) * 8) calc(var(--px) * 4) #e4e4e4,
+    calc(var(--px) * 2) calc(var(--px) * 5) currentColor,
+    calc(var(--px) * 3) calc(var(--px) * 5) currentColor,
+    calc(var(--px) * 4) calc(var(--px) * 5) currentColor,
+    calc(var(--px) * 5) calc(var(--px) * 5) currentColor,
+    calc(var(--px) * 6) calc(var(--px) * 5) currentColor,
+    calc(var(--px) * 7) calc(var(--px) * 5) currentColor,
+    calc(var(--px) * 8) calc(var(--px) * 5) currentColor,
+    calc(var(--px) * 9) calc(var(--px) * 5) #d6d6d6,
+    /* legs */
+    calc(var(--px) * 3) calc(var(--px) * 6) currentColor,
+    calc(var(--px) * 3) calc(var(--px) * 7) #cfcfcf,
+    calc(var(--px) * 6) calc(var(--px) * 6) currentColor,
+    calc(var(--px) * 6) calc(var(--px) * 7) #cfcfcf,
+    /* tail */
+    calc(var(--px) * 9) calc(var(--px) * 4) #f0f0f0,
+    calc(var(--px) * 10) calc(var(--px) * 3) #efefef,
+    calc(var(--px) * 10) calc(var(--px) * 4) #efefef;
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.15));
+  image-rendering: pixelated;
+}
+
+.pixel-dog.is-gallop {
+  bottom: 1.55rem;
+}
+
+@media (max-width: 640px) {
+  .top-links {
+    position: static;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    border-radius: 0.8rem;
+  }
+
+  .top-link + .top-link {
+    border-left: none;
+    margin-left: 0.25rem;
+    padding-left: 0.8rem;
+    position: relative;
+  }
+
+  .top-link + .top-link::before {
+    content: '·';
+    position: absolute;
+    left: 0.2rem;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .dog-playground {
+    height: 11rem;
+    margin: 2.5rem 0 3rem;
+  }
+
+  .pixel-dog {
+    --px: 4px;
+  }
 }
 
 footer {
