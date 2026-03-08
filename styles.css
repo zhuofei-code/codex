@@ -75,6 +75,11 @@ p {
   pointer-events: none;
 }
 
+.top-link[aria-current='page'] {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .dog-playground {
   position: relative;
   height: 13rem;
@@ -241,6 +246,7 @@ p {
 
 .teaching-date {
   white-space: nowrap;
+  font-weight: 700;
 }
 
 .teaching-details p {
