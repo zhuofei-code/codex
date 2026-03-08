@@ -75,6 +75,11 @@ p {
   pointer-events: none;
 }
 
+.top-link[aria-current='page'] {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .dog-playground {
   position: relative;
   height: 13rem;
@@ -201,6 +206,55 @@ p {
   .pixel-dog {
     --px: 4px;
   }
+
+  .teaching-item {
+    grid-template-columns: 1fr;
+    row-gap: 0.05rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .teaching-subitem {
+    padding-left: 0.8rem;
+  }
+}
+
+
+#teaching {
+  margin-top: 2.4rem;
+}
+
+#teaching-heading {
+  margin: 0 0 0.8rem;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.teaching-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.teaching-item {
+  display: grid;
+  grid-template-columns: minmax(12ch, 16ch) 1fr;
+  column-gap: 1.15rem;
+  align-items: start;
+  margin-bottom: 0.3rem;
+}
+
+.teaching-date {
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.teaching-details p {
+  margin: 0;
+}
+
+.teaching-subitem {
+  padding-left: 1.15rem;
 }
 
 footer {
