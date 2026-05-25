@@ -10,6 +10,25 @@ python3 -m http.server 8000
 
 Then open: <http://localhost:8000>
 
+## CV (LaTeX source)
+
+The CV lives in [`cv.tex`](cv.tex). It compiles to `cv.pdf`, which the
+homepage nav bar links to.
+
+**Edit the CV → push → PDF is rebuilt automatically.** The GitHub Actions
+workflow [`.github/workflows/build-cv.yml`](.github/workflows/build-cv.yml)
+runs `pdflatex` on every push that touches `cv.tex` and commits the
+refreshed `cv.pdf` back to `main`.
+
+To rebuild it locally:
+
+```bash
+# Anything with pdflatex works (TeX Live, MacTeX, MiKTeX, …)
+pdflatex cv.tex && pdflatex cv.tex   # twice for hyperref outlines
+# or:
+latexmk -pdf cv.tex
+```
+
 ## Deploy to GitHub Pages
 
 1. Push this repo to GitHub.
