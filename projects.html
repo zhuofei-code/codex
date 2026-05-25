@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Zhuofei Lu</title>
+    <meta
+      name="description"
+      content="Current research projects of Zhuofei Lu: public acceptance of generative AI in Europe, occupational embeddings on Google Ngram, and evaluation of UK flexible-working legislation."
+    />
+    <link rel="stylesheet" href="styles.css?v=20260525c" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <nav class="top-links" aria-label="Primary links">
+          <a class="top-link" href="index.html">Home</a>
+          <a class="top-link" href="projects.html" aria-current="page">Projects</a>
+          <a class="top-link" href="publications.html">Publications</a>
+          <a class="top-link" href="cv.pdf" target="_blank" rel="noopener">CV</a>
+          <a class="top-link" href="teaching.html">Teaching</a>
+        </nav>
+        <h1 class="fade-in">Current Projects</h1>
+        <p class="subtitle fade-in">
+          Active research threads at the intersection of computational social
+          science and policy evaluation.
+        </p>
+      </header>
+
+      <section
+        id="projects"
+        class="fade-in"
+        aria-labelledby="projects-heading"
+      >
+        <h2 id="projects-heading">Three Active Threads</h2>
+        <ol class="projects-list">
+          <li class="project-card">
+            <div class="project-pixel" aria-hidden="true"></div>
+            <header class="project-head">
+              <span class="project-num">01</span>
+              <h3 class="project-title">AI &middot; Context &middot; Europe</h3>
+              <span class="project-tag">AI &amp; Society</span>
+            </header>
+            <p class="project-desc">
+              How European publics accept generative AI across assistant,
+              peer, and supervisor roles &mdash; and how national media,
+              scholarly, and policy regimes bend the literacy-to-acceptance
+              gradient. The empirical core is a set of mixed-effects models on
+              <strong>CRONOS-3 Wave&nbsp;5</strong>
+              (11 countries, N&nbsp;&asymp;&nbsp;7,700), with country-level
+              moderators built from GDELT&nbsp;2.0 news (2018&ndash;2025),
+              OpenAlex scholarly output, and the OECD AI Observatory&rsquo;s
+              labour data. Early findings: media coverage compresses the
+              literacy-to-acceptance slope, while scholarly impact amplifies it.
+            </p>
+            <p class="project-meta">
+              <span>2025 &ndash; ongoing</span>
+              <span class="project-dot">&middot;</span>
+              <span>mixed-effects &middot; cross-level interactions</span>
+              <span class="project-dot">&middot;</span>
+              <a
+                href="https://zhuofei-code.github.io/oxford-week1-seminar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Oxford Week&nbsp;1 seminar &rarr;</a
+              >
+            </p>
+          </li>
+
+          <li class="project-card">
+            <div class="project-pixel" aria-hidden="true"></div>
+            <header class="project-head">
+              <span class="project-num">02</span>
+              <h3 class="project-title">Occupational Embeddings, 1800s&ndash;2000s</h3>
+              <span class="project-tag">NLP &amp; History</span>
+            </header>
+            <p class="project-desc">
+              A diachronic word-embedding pipeline tracing two centuries of
+              occupational gender-typing and cultural prestige through
+              <strong>Google&nbsp;Ngram</strong> (American English, 5-gram).
+              Decade-specific Word2Vec (SGNS) models with
+              orthogonal-Procrustes alignment to a 2000s baseline, run on
+              Oxford ARC under Slurm. The pipeline extends Jiang&nbsp;et&nbsp;al.
+              (2025) on the cultural devaluation of feminized work, and feeds
+              a &lsquo;spaces&rsquo; sub-project on the social geography of
+              kitchens, offices, factories, churches, parks, and prisons
+              &mdash; 87 anchor tokens selected via a 5-stage pre-registered
+              vocabulary protocol.
+            </p>
+            <p class="project-meta">
+              <span>2024 &ndash; ongoing</span>
+              <span class="project-dot">&middot;</span>
+              <span>Word2Vec &middot; Procrustes alignment &middot; HPC (Slurm / ARC)</span>
+            </p>
+          </li>
+
+          <li class="project-card">
+            <div class="project-pixel" aria-hidden="true"></div>
+            <header class="project-head">
+              <span class="project-num">03</span>
+              <h3 class="project-title">Flexible Working &amp; Affective Well-being</h3>
+              <span class="project-tag">Policy Eval</span>
+            </header>
+            <p class="project-desc">
+              A two-decade evaluation of
+              <strong>UK flexible-working legislation</strong>
+              (2003&ndash;2024). Episode-level time-diary models test whether
+              the statutory expansion has delivered well-being gains to the
+              parents and carers it was designed for, and document how the
+              working-from-home uptake curve moves across the COVID-19 period.
+              A central puzzle the project surfaces: flexible-working
+              legislation has continued to strengthen, yet mothers are
+              increasingly less likely to actually work from home.
+            </p>
+            <p class="project-meta">
+              <span>2024 &ndash; ongoing</span>
+              <span class="project-dot">&middot;</span>
+              <span>UKTUS &middot; episode-level models &middot; sequence analysis</span>
+              <span class="project-dot">&middot;</span>
+              <span>GenTime project</span>
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <footer>
+        <div class="footer-links">
+          <a href="mailto:zhuofei.lu@sociology.ox.ac.uk">zhuofei.lu@sociology.ox.ac.uk</a>
+          <span class="footer-sep">/</span>
+          <a
+            href="https://scholar.google.com/citations?user=IEITTwcAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Google Scholar</a
+          >
+          <span class="footer-sep">/</span>
+          <a
+            href="https://www.sociology.ox.ac.uk/people/zhuofei-lu"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Oxford Sociology</a
+          >
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Zhuofei Lu</p>
+      </footer>
+    </main>
+
+    <script src="script.js?v=20260525c"></script>
+  </body>
+</html>
