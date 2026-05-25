@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Claude Code local config / sessions
+.claude/
+
+# LaTeX auxiliary files (cv.pdf is intentionally tracked — Pages serves it)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Editor / OS
+*.swp
+.vscode/
+.idea/
