@@ -1,7 +1,6 @@
 % =============================================================================
 %  Zhuofei Lu — Curriculum Vitae
-%  Compile with:  pdflatex cv.tex   (run twice for cross-references)
-%  Or via latexmk: latexmk -pdf cv.tex
+%  Compile with:  tectonic cv.tex
 % =============================================================================
 \documentclass[11pt,a4paper]{article}
 
@@ -43,8 +42,6 @@
 
 % ----- Helpers ----------------------------------------------------------------
 % \cventry{<date>}{<body>}  -- aligns a date column on the left.
-%   Uses two top-aligned minipages with a small gap so a long date string
-%   (e.g. "10.2024 -- Present") never collides with the body text.
 \newcommand{\cventry}[2]{%
   \noindent
   \begin{minipage}[t]{0.22\textwidth}\raggedright\textbf{#1}\end{minipage}%
@@ -78,20 +75,12 @@
 
 % --------- Academic Employment ------------------------------------------------
 \section*{Academic Employment \& Affiliation}
-\cventry{10.2024 -- Present}{Course Convenor, School of Global and Area Studies, University of Oxford\\
-  \textit{Quantitative Research Methods (MPhil in Global and Area Studies)}}
-
-\cventry{07.2024 -- Present}{Course Co-convenor, Department of Sociology, University of Oxford\\
-  \textit{Statistics Methods (MSc in Sociology)}}
-
-\cventry{07.2024 -- Present}{Postdoctoral Researcher, Department of Sociology, University of Oxford\\
+\cventry{03.2024 -- Present}{Postdoctoral Researcher, Department of Sociology, University of Oxford\\
   \textit{`GenTime' project}}
 
+\cventry{07.2024 -- Present}{Course Convenor, School of Global and Area Studies / Department of Sociology, University of Oxford}
+
 \cventry{01.2025 -- 01.2027}{College Advisor, St Antony's College, University of Oxford}
-
-\cventry{01.2025 -- 06.2025}{College Tutor, BA in Human Sciences, Hertford College, University of Oxford}
-
-\cventry{01.2022 -- 01.2024}{Teaching Assistant, Department of Social Statistics, University of Manchester}
 
 % --------- Education ----------------------------------------------------------
 \section*{Education}
@@ -101,44 +90,61 @@
 \cventry{09.2023 -- 11.2023}{Visiting Ph.D.\ Researcher, Sciences Po, Paris\\
   \textit{Collaborator:} Prof.\ Laurent Lesnard}
 
-\cventry{09.2020 -- 09.2021}{M.Sc.\ in Social Statistics (Distinction), University of Manchester}
+\cventry{09.2020 -- 09.2021}{M.Sc.\ in Social Statistics (Distinction), University of Manchester\\
+  \textit{Supervisor:} Prof.\ Tarani Chandola}
 
-\cventry{09.2019 -- 09.2020}{M.A.\ in Communication, Beijing Normal--Hong Kong Baptist University}
+\cventry{09.2019 -- 09.2020}{M.A.\ in Communication (Merit), Hong Kong Baptist University}
 
-\cventry{09.2015 -- 09.2019}{B.A.\ in Marketing, Beijing Normal--Hong Kong Baptist University}
+\cventry{09.2015 -- 09.2019}{B.A.\ in Marketing Management, Hong Kong Baptist University}
+
+% --------- Teaching -----------------------------------------------------------
+\section*{Teaching}
+\cventry{07.2024 -- Present}{Course Convenor, School of Global and Area Studies / Department of Sociology, University of Oxford
+  \begin{itemize}
+    \item Quantitative Research Methods (MPhil level)
+    \item Statistics Methods (MSc in Sociology)
+  \end{itemize}}
+
+\cventry{07.2024 -- Present}{Master's Supervisor / Examiner, Department of Sociology, University of Oxford}
+
+\cventry{01.2025 -- 06.2025}{College Tutor, Hertford College, University of Oxford\\
+  \textit{Demographic research (BA in Human Sciences)}}
+
+\cventry{07.2024 -- Present}{Sequence Analysis in R (annual workshop), Centre for Time Use Research, UCL}
+
+\cventry{01.2022 -- 01.2024}{Course Instructor, Department of Social Statistics, University of Manchester
+  \begin{itemize}
+    \item Introduction to Statistical Models
+    \item The Survey Method in Social Research
+    \item Statistical Models for Social Networks
+    \item Structural Equations Modelling
+  \end{itemize}}
 
 % --------- Research Interests -------------------------------------------------
 \section*{Research Interests}
-Machine learning $\cdot$ AI literacy $\cdot$ work $\cdot$ well-being $\cdot$ media \& culture $\cdot$ time use $\cdot$ gender
+Sociology of work $\cdot$ well-being $\cdot$ time use $\cdot$ social stratification $\cdot$ machine learning $\cdot$ GenAI literacy
 
 % --------- Editorial & Service ------------------------------------------------
 \section*{Editorial \& Academic Service}
 \begin{itemize}
-\item Editorial Board, \textit{Work, Employment \& Society} (ABS4), 02.2026 -- 02.2030
-\item Editorial Board, \textit{Social Science Research} (ABS3), 01.2025 -- 01.2027
+\item Editorial Board Member, \textit{Work, Employment \& Society} (ABS4), 02.2026 -- 02.2030
+\item Editorial Board Member, \textit{Social Science Research} (ABS3), 01.2025 -- 01.2027
 \item Associate Editor, \textit{Humanities and Social Sciences Communications}, 04.2024 -- 04.2027
-\item Member, Department of Sociology Research Committee, University of Oxford, 10.2025 -- 01.2027
+\item Researcher Representative, Department of Sociology Research Committee, University of Oxford, 10.2025 -- 01.2027
+\item PhD Student Representative, University of Manchester, 12.2022 -- 12.2023
 \end{itemize}
+
+\textbf{Peer reviewer for:} Social Science \& Medicine; Work, Employment \& Society; Journal of Marriage and Family; Nature Cities; Demographic Research; Social Science Research; Research in Social Stratification and Mobility; Social Problems; Journal of Social Computing; Journal of Happiness Studies; Sociological Quarterly; Socius; European Psychiatry; Scientific Reports; BMC Geriatrics; BMC Systematic Reviews; Journal of Time Use Research; Global Health Action; International Journal of Women's Health; Current Psychology.
 
 % --------- Publications -------------------------------------------------------
 \section*{Publications}
 \textbf{Lu, Z.} indicates the author; * indicates corresponding author.
 \begin{enumerate}[label={[\arabic*]}]
+\item Lyv, W. \& \textbf{Lu, Z.*} (co-first authors), Wang, S. \& Kan, M.-Y. (2026). Vertical Education-Occupation Mismatch and Gender Division of Labour: A Longitudinal Dyadic Analysis in the UK during 2002--2023. \textit{Work, Employment \& Society}.
+
 \item Cui, S., \textbf{Lu, Z.*} \& Wang, S. (2025). Gender and Parenthood Disparities in Work Time Fragmentation in the United States. \textit{Social Indicators Research}.
 
 \item Guo, Y., Cui, S., \textbf{Lu, Z.} \& Wang, S. (2025). Dependence and Precarity in the Gig Economy: A Longitudinal Analysis of Platform Work and Mental Distress. \textit{British Journal of Sociology}.
-
-\item Ling, W., Wang, S. \& \textbf{Lu, Z.*} (2024). Working Time Mismatch and Employee Subjective Well-being Across Institutional Contexts: A Job Quality Perspective. \textit{Work, Employment \& Society}.
-
-\item \textbf{Lu, Z.*} (2024). Can work time fragmentation influence workers' subjective time pressure? The roles of gender and parenthood. \textit{Sociology} (BSA).
-
-\item \textbf{Lu, Z.}, Wang, S.*, Ling, W. \& Guo, Y. (2023). Gig Work and Mental Health during the Covid-19 Pandemic: A Gendered Examination of Comparisons with Regular Employment and Unemployment. \textit{Social Science \& Medicine}.
-
-\item \textbf{Lu, Z.}, Wang, S.* \& Olsen, W. (2023). Revisiting the `flexibility paradox': degree of work schedule flexibility and time use patterns across gender and occupational groups. \textit{Humanities \& Social Sciences Communications}.
-
-\item \textbf{Lu, Z.} \& Zhuang, W.* (2023). Can Teleworking Improve Workers' Job Satisfaction? Exploring the Roles of Gender and Emotional Well-Being. \textit{Applied Research in Quality of Life}.
-
-\item \textbf{Lu, Z.*}, Wang, S., Li, Y., Liu, X. \& Olsen, W. (2023). Who gains mental health benefits from work autonomy? The roles of gender and occupational class. \textit{Applied Research in Quality of Life}.
 
 \item \textbf{Lu, Z.}, He, Y., Shi, X., Xiao, S., Wang, Z. \& Wen, Y. (2025). The Gendered Inequalities in the Mental Consequences of Work Time Fragmentation: Latest Time Use Evidence in the UK. \textit{Social Indicators Research}.
 
@@ -148,22 +154,34 @@ Machine learning $\cdot$ AI literacy $\cdot$ work $\cdot$ well-being $\cdot$ med
 
 \item Lei, C. \& \textbf{Lu, Z.*} (2024). Loneliness as a Mediator in the Association Between Food Insecurity and Multiple Sleep Problems: Evidence From the 2021/22 UK Household Longitudinal Study. \textit{American Journal of Health Promotion}.
 
+\item Ling, W., Wang, S. \& \textbf{Lu, Z.*} (2024). Working Time Mismatch and Employee Subjective Well-being Across Institutional Contexts: A Job Quality Perspective. \textit{Work, Employment \& Society}.
+
+\item \textbf{Lu, Z.*} (2024). Can work time fragmentation influence workers' subjective time pressure? The roles of gender and parenthood. \textit{Sociology} (BSA).
+
+\item \textbf{Lu, Z.}, Wang, S.*, Ling, W. \& Guo, Y. (2023). Gig Work and Mental Health during the Covid-19 Pandemic: A Gendered Examination of Comparisons with Regular Employment and Unemployment. \textit{Social Science \& Medicine}.
+
+\item \textbf{Lu, Z.}, Wang, S.* \& Olsen, W. (2023). Revisiting the `flexibility paradox': degree of work schedule flexibility and time use patterns across gender and occupational groups. \textit{Humanities and Social Sciences Communications}.
+
+\item \textbf{Lu, Z.} \& Zhuang, W.* (2023). Can Teleworking Improve Workers' Job Satisfaction? Exploring the Roles of Gender and Emotional Well-Being. \textit{Applied Research in Quality of Life}.
+
+\item \textbf{Lu, Z.*}, Wang, S., Li, Y., Liu, X. \& Olsen, W. (2023). Who gains mental health benefits from work autonomy? The roles of gender and occupational class. \textit{Applied Research in Quality of Life}.
+
 \item Wang, S. \& \textbf{Lu, Z.*} (equal authorship, 2022). Is Paid Inflexible Work Better than Unpaid Housework for Women's Mental Health? The Moderating Role of Parenthood. \textit{Applied Research in Quality of Life}.
 
 \item Wang, S., Li, L.\,Z., \textbf{Lu, Z.}, Li, S. \& Rehkopf, D. (equal authorship, 2022). Work schedule control and allostatic load biomarkers: Disparities between and within gender. \textit{Social Indicators Research}.
 \end{enumerate}
 
 % --------- Working Papers -----------------------------------------------------
-\section*{Working Papers}
+\section*{Under Review \& Working Papers}
 \begin{itemize}
-\item Vertical Education-Occupation Mismatch and Gender Division of Labour: A Longitudinal Dyadic Analysis in the UK during 2002--2023. \textit{Minor revision in an ABS4 journal.}
 \item Double Disadvantages? A Longitudinal Study Exploring Intersectional Disparities in Life Satisfaction Among Gig Workers by Gender and Ethnicity. \textit{Major revision in an ABS4 journal.}
-\item Work-family role switching and enjoyment: an objective time use approach. \textit{Under review.}
 \end{itemize}
 
 % --------- Conference Presentations -------------------------------------------
 \section*{Conference Presentations}
 \begin{itemize}
+\item International Conference on Social Computing 2026: \textit{National Media and Scholarly Contexts of Social Stratification in AI Literacy and Acceptance Across Europe.}
+\item International Conference on Social Computing 2026: \textit{The Gendered Linguistic Geometry of Everyday Spaces in American English Discourse, 1900--2009: Domain-Conditional Feminization and the Asymmetric Emergence of Private Vocabulary.}
 \item ASA 120th Annual Meeting --- Demography and the Future of Work (paper session): \textit{Gender and Parenthood Disparities in Work Time Fragmentation in the United States.}
 \item ASA 120th Annual Meeting --- Gender and Work (round table): \textit{Vertical Education-Occupation Mismatch and Gender Division of Labour: A Longitudinal Dyadic Analysis in the UK.}
 \item 46th International Association for Time Use Research Conference (session chair \& oral): \textit{Impact of Work-Family Role Switching on Daily and Instantaneous Enjoyment: A Gendered Time-Use Analysis in the UK.}
@@ -172,26 +190,32 @@ Machine learning $\cdot$ AI literacy $\cdot$ work $\cdot$ well-being $\cdot$ med
 \item 82nd Annual Meeting of the Academy of Management (paper session): \textit{Work Time Control and Allostatic Load Biomarkers: Differences Between and Within Genders.}
 \end{itemize}
 
-% --------- Invited Lectures ---------------------------------------------------
-\section*{Invited Lectures \& Speeches}
+% --------- Invited Lectures, Speeches & Interviews -----------------------------
+\section*{Invited Lectures, Speeches \& Interviews}
 \begin{itemize}
-\item Government of Alberta's Public Safety and Emergency Services Meeting: ``How quantitative social research can support evidence-based practice and policy evaluation.''
-\item Sequence analysis in practice (R \& Stata workshop), Centre for Time Use Research, UCL. June 2025.
-\item Roundtable presentation: \textit{Women and health: building healthier working lives}. Understanding Society \& King's Global Institute for Women's Leadership. 16 July 2024.
+\item Expert interview, BBC News Brasil, 8 June 2026: on proposals to reduce Brazil's standard working week and the implications of flexible working for workers' well-being and gender inequality. ``\textit{Fim da escala 6x1: por que jornada flex\'ivel pode aumentar explora\c{c}\~ao do trabalhador, segundo pesquisador de Oxford}.''
+\item Seminar, Business School, University of East Anglia, 26 May 2026: ``AI literacy and acceptance in 11 European countries.''
+\item Seminar, Department of Sociology, University of Oxford, 27 April 2026: ``The National Context of Social Stratification of AI Literacy and Acceptance in Europe.''
+\item Government of Alberta's Public Safety and Emergency Services Meeting, 2 September 2025: ``How quantitative social research can support evidence-based practice and policy evaluation.''
+\item Roundtable presentation: \textit{Women and health: building healthier working lives}. Understanding Society \& King's Global Institute for Women's Leadership, 16 July 2024.
 \end{itemize}
 
 % --------- Grants & Awards ----------------------------------------------------
 \section*{Grants \& Awards}
 \begin{itemize}
-\item Chinese Government Award for Outstanding Self-financed PhD Students Abroad (2024), \$6{,}000.
+\item Chinese Government Award for Outstanding PhD Students Abroad (2024), \$6{,}000.
 \item ESRC Impact Acceleration Account (IAA) Award for Public Engagement (2025), \pounds1{,}000.
 \end{itemize}
 
 % --------- Technical Skills ---------------------------------------------------
 \section*{Technical Skills}
 \textbf{Software:} R, Python, Stata, High-Performance Computing, SQL, \LaTeX, GitHub, SPSS, UCINET.\\[2pt]
-\textbf{Statistical methods:} Machine learning, sequence analysis, survival analysis, causal inference, multilevel modelling, longitudinal SEM, social network analysis, complex survey design.\\[2pt]
-\textbf{Datasets:} Google Ngram, GDELT, UKHLS, MTUS, UKTUS, ATUS, ELSA.
+\textbf{Statistical methods:} NLP, machine learning, sequence analysis, survival analysis, causal inference, multilevel modelling, longitudinal SEM, social network analysis, complex survey design.\\[2pt]
+\textbf{Datasets:} Corpus data (e.g.\ Google Ngram), news outlets (e.g.\ GDELT), multinational household panels (e.g.\ UKHLS), time diaries (e.g.\ MTUS, UKTUS, ATUS), biomarker data (e.g.\ ELSA).
+
+% --------- Memberships --------------------------------------------------------
+\section*{Professional Memberships}
+Sequence Analysis Association $\cdot$ British Sociological Association $\cdot$ British Population Association $\cdot$ Work and Family Researchers Network
 
 % --------- Languages ----------------------------------------------------------
 \section*{Languages}
@@ -199,7 +223,7 @@ English (fluent) $\cdot$ Mandarin (native) $\cdot$ Cantonese (fluent) $\cdot$ Ho
 
 \vspace{8pt}
 \begin{center}\footnotesize
-\textit{Last updated: \today.}
+\textit{Last updated: July 2026.}
 \end{center}
 
 \end{document}
