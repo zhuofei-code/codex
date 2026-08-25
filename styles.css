@@ -122,6 +122,11 @@ h1 {
   font-weight: 400;
 }
 
+/* Institution names must never break mid-phrase across lines. */
+.subtitle-org {
+  white-space: nowrap;
+}
+
 /* ── Sections ──────────────────────────────────────────────── */
 
 section {
