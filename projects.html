@@ -6,7 +6,7 @@
     <title>Projects | Zhuofei Lu</title>
     <meta
       name="description"
-      content="Current research projects of Zhuofei Lu: public acceptance of generative AI in Europe, occupational embeddings on Google Ngram, and gender, parenthood, and well-being in homeworking Britain."
+      content="Current research projects of Zhuofei Lu: public acceptance of generative AI in Europe, transformer models of cultural meaning in historical text, and gender, parenthood, and well-being in homeworking Britain."
     />
     <link
       rel="canonical"
@@ -80,26 +80,29 @@
             <div class="project-pixel" aria-hidden="true"></div>
             <header class="project-head">
               <span class="project-num">02</span>
-              <h3 class="project-title">Occupational Embeddings, 1800s&ndash;2000s</h3>
-              <span class="project-tag">NLP &amp; History</span>
+              <h3 class="project-title">Transformers vs. Word2Vec, 1800s&ndash;2000s</h3>
+              <span class="project-tag">NLP &amp; Culture</span>
             </header>
             <p class="project-desc">
-              A diachronic word-embedding pipeline tracing two centuries of
-              occupational gender-typing and cultural prestige through
-              <strong>Google&nbsp;Ngram</strong> (American English, 5-gram).
-              Decade-specific Word2Vec (SGNS) models with
-              orthogonal-Procrustes alignment to a 2000s baseline, run on
-              Oxford ARC under Slurm. The pipeline extends Jiang&nbsp;et&nbsp;al.
-              (2025) on the cultural devaluation of feminized work, and feeds
-              a &lsquo;spaces&rsquo; sub-project on the social geography of
-              kitchens, offices, factories, churches, parks, and prisons
-              &mdash; 87 anchor tokens selected via a 5-stage pre-registered
-              vocabulary protocol.
+              Whether transformer architectures recover cultural meaning from
+              historical text better than the static word vectors diachronic
+              research has relied on. BERT-family contextual embeddings are
+              built from full-text historical American English, then compared
+              against the standard pipeline, namely decade-specific Word2Vec
+              (SGNS) models on <strong>Google&nbsp;Ngram</strong> aligned to a
+              2000s baseline by orthogonal Procrustes. Both pipelines are
+              evaluated on the same 87 anchor tokens, selected through a
+              5-stage pre-registered vocabulary protocol. The substantive
+              targets are occupational gender-typing and cultural prestige,
+              extending Jiang&nbsp;et&nbsp;al. (2025) on the cultural
+              devaluation of feminized work, and a &lsquo;spaces&rsquo;
+              sub-project on the social geography of kitchens, offices,
+              factories, churches, parks, and prisons.
             </p>
             <p class="project-meta">
               <span>2024 &ndash; ongoing</span>
               <span class="project-dot">&middot;</span>
-              <span>Word2Vec &middot; Procrustes alignment &middot; HPC (Slurm / ARC)</span>
+              <span>BERT-family contextual embeddings &middot; Word2Vec baseline &middot; HPC (Slurm / ARC)</span>
             </p>
           </li>
 
