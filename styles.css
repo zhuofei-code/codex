@@ -677,6 +677,62 @@ em {
   font-size: 0.9rem;
 }
 
+/* ── Pet photos (homepage side margins, wide screens only) ─── */
+
+.pets {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .pets {
+    /* each empty margin beside the 720px column */
+    --gutter: calc((100vw - 720px) / 2);
+    --pet-offset: min(calc(var(--gutter) / 2), 280px);
+    --pet-h: clamp(160px, calc(var(--gutter) * 0.5), 250px);
+    display: block;
+    position: relative;
+    height: 0;
+  }
+
+  .pet {
+    position: absolute;
+    display: block;
+    transform: translate(-50%, -50%);
+  }
+
+  .pet img {
+    display: block;
+    width: auto;
+    height: calc(var(--pet-h) * var(--pet-scale, 1));
+    animation: pet-in 0.6s ease-out 0.4s backwards;
+  }
+
+  .pet--left {
+    left: calc(-1 * var(--pet-offset));
+  }
+
+  .pet--right {
+    left: calc(100% + var(--pet-offset));
+  }
+
+  /* centres measured from the top of the column */
+  .pet--l1 { top: 155px; --pet-scale: 0.92; }
+  .pet--r1 { top: 215px; }
+  .pet--l2 { top: 535px; --pet-scale: 1.14; }
+  .pet--r2 { top: 645px; --pet-scale: 1.03; }
+}
+
+@keyframes pet-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* ── Footer ────────────────────────────────────────────────── */
 
 footer {
@@ -733,6 +789,10 @@ footer {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .pet img {
+    animation: none;
   }
 }
 
@@ -896,6 +956,7 @@ footer {
 
 @media print {
   .top-links,
+  .pets,
   .dog-playground,
   .section-more {
     display: none;

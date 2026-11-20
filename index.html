@@ -59,10 +59,29 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260825a" />
+    <link rel="stylesheet" href="styles.css?v=20261120a" />
   </head>
   <body>
     <main class="container">
+      <div class="pets" aria-hidden="true">
+        <picture class="pet pet--left pet--l1">
+          <source srcset="images/dog-smiling.avif" type="image/avif" />
+          <img src="images/dog-smiling.png" alt="" width="457" height="560" loading="lazy" decoding="async" />
+        </picture>
+        <picture class="pet pet--right pet--r1">
+          <source srcset="images/dog-sitting.avif" type="image/avif" />
+          <img src="images/dog-sitting.png" alt="" width="389" height="560" loading="lazy" decoding="async" />
+        </picture>
+        <picture class="pet pet--left pet--l2">
+          <source srcset="images/dog-walking.avif" type="image/avif" />
+          <img src="images/dog-walking.png" alt="" width="297" height="560" loading="lazy" decoding="async" />
+        </picture>
+        <picture class="pet pet--right pet--r2">
+          <source srcset="images/cat.avif" type="image/avif" />
+          <img src="images/cat.png" alt="" width="366" height="560" loading="lazy" decoding="async" />
+        </picture>
+      </div>
+
       <header>
         <nav class="top-links" aria-label="Primary links">
           <a class="top-link" href="projects.html">Projects</a>
@@ -323,6 +342,6 @@
       </footer>
     </main>
 
-    <script src="script.js?v=20260825a"></script>
+    <script src="script.js?v=20261120a"></script>
   </body>
 </html>
